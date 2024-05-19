@@ -1,0 +1,25 @@
+/* estilos politica de privacidad */
+
+.privacidad-container {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/fondo-main.jpg);
+}
+
+.privacidad-menu {
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.privacidad-h3 {
+    color: var(--color-black);
+}
+
+.inactive {
+    display: none;
+}
+
+.btn-privacidad {
+    cursor: pointer;
+}

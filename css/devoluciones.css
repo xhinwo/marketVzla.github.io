@@ -1,0 +1,25 @@
+/* estilos del menu de devoluciones */
+
+.devoluciones-container {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/fondo-main.jpg);
+}
+
+.devoluciones-menu {
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.devoluciones-h3 {
+    color: var(--color-black);
+}
+
+.inactive {
+    display: none;
+}
+
+.btn-devoluciones {
+    cursor: pointer;
+}

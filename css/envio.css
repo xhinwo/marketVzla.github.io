@@ -1,0 +1,30 @@
+/* estilos del main */
+
+.politica-container {
+    background-image: url( ../img/fondo-main.jpg);
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.politica-main {
+    padding: 40px;
+}
+
+.politica-main a {
+    text-decoration: none;
+    color: var(--color-letter);
+    border-bottom: 1px solid #113946;
+}
+
+.politica-h3 {
+    color: var(--color-black);
+}
+
+.inactive {
+    display: none;
+}
+
+.btn-envio {
+    cursor: pointer;
+}

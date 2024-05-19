@@ -1,0 +1,25 @@
+/* estilos de termino del servicio */
+
+.termino-servicio-container {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/fondo-main.jpg);
+}
+
+.termino-menu {
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.termino-h3 {
+    color: var(--color-black);
+}
+
+.inactive {
+    display: none;
+}
+
+.btn-servicio {
+    cursor: pointer;
+}
