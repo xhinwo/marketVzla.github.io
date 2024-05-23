@@ -1,0 +1,150 @@
+/* general styles */
+
+:root {
+    --bg-fotter:#C7B198;
+    --bg-nav:#DFD3C3;
+    --bg-body:#F0ECE3;
+    --color-letter: #113946;
+    --color-black:#000000;
+    --color-white:#FFFFFF;
+    --size-big: 18px;
+    --size-medium: 16px;
+    --size-small: 14px;
+    --size-small-xs: 12px;
+}
+
+* { box-sizing: border-box;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.inactive {
+    display: none;
+}
+
+.peluqueria-container {
+    background-image: url(../img/fondo-main.jpg);
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.peluqueria-section {
+    padding: 15px;
+}
+
+.peluqueria-section h3 {
+    padding: 15px 0px;
+    color: var(--color-letter);
+}
+
+.peluqueria-tarjeta {
+    width: 70%;
+    display: flex;
+    justify-content:space-around;
+    margin: 25px auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgb(159, 151, 151);
+    background-image: linear-gradient(to left bottom, #dedbdb, #e3e0e0, #e9e6e6, #eeebeb, #f4f1f1, #f6f3f3, #f7f6f6, #f9f8f8, #f8f7f7, #f6f6f5, #f5f4f4, #f4f3f3);
+    place-items: center;
+}
+
+.direccion-cita p:nth-child(1) {
+    font-weight: 600;
+}
+
+.direccion-cita p {
+    font-size: var(--size-small);
+}
+
+.agendar {
+    width: 30%;
+}
+
+.ducha-caninos img {
+    width: 100%;
+    filter: drop-shadow(5px 5px grey);
+}
+
+.btn-agendar-cita {
+    height: 35px;
+    width: 90px;
+    position: relative;
+    border-style: none;
+    background: none;
+    border-radius: 40px;
+    margin: 6px 14px;
+    box-shadow: 2px 2px 2px 2px rgb(143, 135, 39);
+    color:#8d2610 ;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.oferta-peluqueria {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to right top, #e5ddc5, #e7e0c9, #e9e4cd, #ece7d2, #eeead6, #e9ead7, #e4ead8, #e0ead9, #d4e6d9, #cae2da, #c3dddc, #bed7dc);
+    opacity: 60%;
+    text-align: center;
+}
+
+.span-peluqueria {
+    color: #cd5810;
+    font-weight: 700;
+    font-size: var(--size-big)
+}
+
+.container-servicio-peluqueria {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0px 35px 0px;
+}
+
+.article-peluqueria h3 {
+    padding: 10px 0px;
+    color: var(--color-letter);
+}
+
+.aside-peluqueria {
+    display: flex;
+    padding: 15px 0px 0px;
+}
+
+.aside-peluqueria li {
+    list-style: none;
+}
+
+.img-peluqueria {
+    width: 100%;
+}
+
+.peluqueria-observaciones {
+    width: 100%;
+    height: auto;
+    padding: 0px 35px 20px 35px;
+    text-align: center;
+}
+
+.peluqueria-observaciones h3 {
+    color: var(--color-letter);
+    padding-bottom: 15px;
+}
+
+.img-requerimientos {
+    width: 100%;
+    filter: drop-shadow(15px 15px 15px grey);
+}
+
+@media(max-width: 412px) {
+    .peluqueria-tarjeta {
+        width: 90%;
+    }
+}
+
+ 
+

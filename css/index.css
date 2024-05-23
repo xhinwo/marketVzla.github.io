@@ -29,14 +29,12 @@
 }
 
 .section-container {
-  
     height: 50px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .section-logo {
-    
     width: 20%;
 }
 
@@ -685,4 +683,5 @@ footer {
       opacity: 1;
     }
   }
-  
+
+ 

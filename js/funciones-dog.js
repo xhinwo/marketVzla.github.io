@@ -1,22 +1,20 @@
-     // funcion de tarjetas de perros
+    // funcion de tarjetas de perros
     
-    function renderizacionCardDog (arr) {
+    function renderizacionCard (arr,container) {
         containerDog.innerHTML = ''
+        containerCat.innerHTML = ''
         for ( const product of arr) {
             
-    const containerDog = document.querySelector('.card-container-dog')
     const productCard = document.createElement('section')
-    productCard.classList.add('productos-card-dog')
-    containerDog.appendChild(productCard)
-    
+    productCard.classList.add('productos-card')
+    container.appendChild(productCard)
+                
     const productDiv = document.createElement('div')
-    const referidoImg = document.createElement('a')
     const productImg = document.createElement('img')
     productImg.setAttribute('src',product.imagen)
-    referidoImg.setAttribute('href','./')
-    productDiv.appendChild(referidoImg)
-    referidoImg.appendChild(productImg)
-
+    productImg.setAttribute('alt',product.informacion)
+    productDiv.appendChild(productImg)
+            
     const productName = document.createElement('p')
     productName.innerText = product.name
 
@@ -41,8 +39,10 @@
     productCard.appendChild(productName)
     productCard.appendChild(productInfoDiv)
     productCard.appendChild(productPriceDiv)
-    
+
 }}
+
+// productos de perro
 
 const producListDog = []
 producListDog.push ({
@@ -214,51 +214,7 @@ producListDog.push ({
     boton: 'Comprar'
 })
 
- // funcion de tarjetas de gatos
-
- function renderizacionCardCat (arr) {
-        containerCat.innerHTML = ''
-        for ( const product of arr) {
-         
-    const containerCat = document.querySelector('.card-container-cat')
-    const productCard = document.createElement('section')
-    productCard.classList.add('productos-card-cat')
-    containerCat.appendChild(productCard)
-    
-    const productDiv = document.createElement('div')
-    const referidoImg = document.createElement('a')
-    const productImg = document.createElement('img')
-    productImg.setAttribute('src',product.imagen)
-    referidoImg.setAttribute('href','./')
-    productDiv.appendChild(referidoImg)
-    referidoImg.appendChild(productImg)
-
-    const productName = document.createElement('p')
-    productName.innerText = product.name
-
-    const productInfoDiv = document.createElement('div')
-    productInfoDiv.classList.add('informacion-card')
-    const productInfo = document.createElement('p')
-    productInfo.classList.add('informacion-p-1')
-    productInfo.innerText = product.informacion
-    productInfoDiv.appendChild(productInfo)
-
-    const productPriceDiv = document.createElement('div')
-    productPriceDiv.classList.add('informacion-p-2')
-    const productPrice = document.createElement('p')
-    productPrice.innerText = '$' + product.precio
-    const buttonCard = document.createElement('button')
-    buttonCard.classList.add('button-card')
-    buttonCard.innerText = product.boton
-    productPriceDiv.appendChild(productPrice)
-    productPriceDiv.appendChild(buttonCard)
-
-    productCard.appendChild(productDiv)
-    productCard.appendChild(productName)
-    productCard.appendChild(productInfoDiv)
-    productCard.appendChild(productPriceDiv)
-    
-}}
+// productos de gato
 
 const producListCat = []
 producListCat.push ({
@@ -430,3 +386,4 @@ producListCat.push ({
     boton: 'Comprar'
 })
    
+

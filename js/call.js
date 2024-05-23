@@ -1,15 +1,18 @@
 const btnInicio = document.querySelector('.btn-inicio')
 const btnDog = document.querySelector('.btn-dog')
 const btnCat = document.querySelector('.btn-cat')
-const containerDog = document.querySelector('.card-container-dog')
-const containerCat = document.querySelector('.card-container-cat')
-const mainPages = document.querySelector('.main-container')
-
+const btnPeluqueria = document.querySelector('.btn-peluqueria')
 const btnPrivacidad = document.querySelector('.btn-privacidad')
 const btnServicio = document.querySelector('.btn-servicio')
 const btnEnvio = document.querySelector('.btn-envio')
 const btnDevoluciones = document.querySelector('.btn-devoluciones')
+
+const mainPages = document.querySelector('.main-container')
+const containerDog = document.querySelector('.card-container-dog')
+const containerCat = document.querySelector('.card-container-cat')
+const containerPeluqueria = document.querySelector('.peluqueria-container')
 const containerPrivacidad = document.querySelector('.privacidad-container')
 const containerServicio = document.querySelector('.termino-servicio-container')
 const containerPolitica = document.querySelector('.politica-container')
 const containerDevoluciones = document.querySelector('.devoluciones-container')
+

@@ -1,5 +1,27 @@
-/* estilos productos dog */
+/* general styles */
 
+:root {
+  --bg-fotter:#C7B198;
+  --bg-nav:#DFD3C3;
+  --bg-body:#F0ECE3;
+  --color-letter: #113946;
+  --color-black:#000000;
+  --color-white:#FFFFFF;
+  --size-big: 18px;
+  --size-medium: 16px;
+  --size-small: 14px;
+  --size-small-xs: 12px;
+}
+
+* { box-sizing: border-box;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* estilos productos dog */
 
 .card-container-dog {
   width: 100%;
@@ -17,13 +39,13 @@
     display:none;
 }
 
-.productos-card-dog { 
+.productos-card { 
     background-image: url(../img/fondo-main.jpg);
     box-shadow: 1px 2px 2px 1px rgb(88, 103, 88);
     border-radius: 20px;
 }
 
-.productos-card-dog img {
+.productos-card img {
     width: 100%;
     filter: drop-shadow( 5px 5px 5px rgb(5, 5, 5));
 }
@@ -62,7 +84,7 @@
     font-weight: 700;
 }
 
-.productos-card-dog {
+.productos-card {
 	-webkit-animation: roll-in-left 0.6s ease-out both;
 	        animation: roll-in-left 0.6s ease-out both;
 }
