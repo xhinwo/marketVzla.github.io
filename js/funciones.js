@@ -1,4 +1,6 @@
-    // funcion de tarjetas de perros
+
+
+// funcion de tarjetas de perros
     
     function renderizacionCard (arr,container) {
         containerDog.innerHTML = ''
@@ -39,9 +41,67 @@
     productCard.appendChild(productName)
     productCard.appendChild(productInfoDiv)
     productCard.appendChild(productPriceDiv)
-
 }}
 
+// funcion pagina de la busqueda
+
+function searchProducto () {
+    const valueNavegacion = imputNavegacion.value.toLowerCase();
+    const listaProductos = [...producListCat, ...producListDog];
+    
+    // Filtrar productos que coincidan con el valor del input
+    const productosFiltrados = listaProductos.filter(product => 
+        product.name.toLowerCase().includes(valueNavegacion)
+    );
+    
+    // Limpiar la lista de resultados anteriores
+    productosNavegacion.innerHTML = '';
+    
+    // Mostrar los productos que coinciden
+    if (productosFiltrados.length > 0) {
+        renderizacionCard(productosFiltrados,productosNavegacion)
+        imputNavegacion.value = ''
+    } else {
+        imputNavegacion.value = ''
+        stockfail.forEach(element => {
+           
+            const containerStockFail = document.createElement('section')
+            containerStockFail.classList.add('container-stock')
+    
+            const h3StockFail = document.createElement('h3')
+            h3StockFail.innerText = element.titulo
+            h3StockFail.classList.add('titulo-stockFail')
+    
+            const subtituloStockFail = document.createElement('p')
+            subtituloStockFail.innerText = `${element.subtitulo} 🐾‼️ ${valueNavegacion} ‼️ 🐾`
+            subtituloStockFail.classList.add('sub-stockFail')
+    
+            const parrafoStockFail = document.createElement('p')
+            parrafoStockFail.innerText = element.parrafo
+            parrafoStockFail.classList.add('parrafo-stockFail')
+    
+            const enumeracionStockFail = document.createElement('p')
+            enumeracionStockFail.innerText = element.listaEnumeracion1
+            enumeracionStockFail.classList.add('enumeracion-1-fail')
+    
+            const enumeracionStockFailTwo = document.createElement('p')
+            enumeracionStockFailTwo.innerText = element.listaEnumeracion2
+            enumeracionStockFailTwo.classList.add('enumeracion-2-fail')
+    
+            const enumeracionStockFailThree = document.createElement('p')
+            enumeracionStockFailThree.innerText = element.listaEnumeracion3
+            enumeracionStockFailThree.classList.add('enumeracion-3-fail')
+    
+            const postDataStockFail = document.createElement('p')
+            postDataStockFail.innerText = element.postData
+            postDataStockFail.classList.add('post-data-stock-fail')
+    
+            containerStockFail.append(h3StockFail,subtituloStockFail,parrafoStockFail,enumeracionStockFail,enumeracionStockFailTwo,enumeracionStockFailThree,postDataStockFail)
+            productosNavegacion.append(containerStockFail);
+            
+        })
+}}
+    
 // productos de perro
 
 const producListDog = []
@@ -385,5 +445,75 @@ producListCat.push ({
     precio: 29.999,
     boton: 'Comprar'
 })
-   
+
+// respuesta al search cuando no hay stock 
+
+const stockfail = []
+stockfail.push ({
+    titulo: 'NO HEMOS ENCONTRADO LO QUE BUSCABAS:',
+    subtitulo: 'No tenemos resultados para:',
+    parrafo: 'Pero que no cunda el pánico, sigue las instrucciones',
+    listaEnumeracion1: '1. Revisa que la búsqueda no tenga errores ortográficos',
+    listaEnumeracion2: '2. Prueba a volver a buscar con palabras más específicas',
+    listaEnumeracion3: '3. Vuelve a nuestra home y prueba de nuevo',
+    postData: '¡Todos los caminos llevan a Roma! :)'
+})
+
+// fetch para extraer videos de youtube 
+
+const options = {
+    method: 'GET',
+    url: 'https://youtube-v31.p.rapidapi.com/search',
+    params: {
+        channelId: 'UCg31_TIMuk3Lfe-db_BM5qw',
+        part: 'snippet,id',
+        order: 'date',
+        maxResults: '9'
+    },
+    headers: {
+        'x-rapidapi-key': '54449033a2msh1282724d9671408p1ed553jsnfe069ecf2981',
+        'x-rapidapi-host': 'youtube-v31.p.rapidapi.com'
+    }
+};
+
+async function fetchVideos() {
+    try {
+        
+        const response = await axios.request(options);
+        const videos = await response 
+        
+        videos.data.items.map(video => {
+            const containerBlog = document.createElement('section')
+            containerBlog.classList.add('blog-container')
+
+            const iframeContainer = document.createElement('div');
+             iframeContainer.classList.add('iframe-container');
+
+            const iframe = document.createElement('iframe');
+            iframe.width = '305';
+            iframe.height = '195';
+            iframe.src = `https://www.youtube.com/embed/${video.id.videoId}`;
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+            iframe.allowFullscreen = true;
+
+            const h3Container = document.createElement('div')
+            const h3Blog = document.createElement('h3')
+            h3Blog.innerText = video.snippet.title
+            h3Blog.classList.add('h3-blog')
+
+            iframeContainer.appendChild(iframe);
+            h3Container.append(h3Blog)
+            containerBlog.append(iframeContainer,h3Container)
+            asideVideo.append(containerBlog)
+        }
+      )
+    } catch (error) {
+        return (error)
+    }
+}
+
+fetchVideos()
+
+
+
 

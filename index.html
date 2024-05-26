@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +7,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/index.css">
-        <link rel="stylesheet" href="./css/producs-dog.css">
-        <link rel="stylesheet" href="./css/producs-cat.css">
+        <link rel="stylesheet" href="./css/productos-card.css">
         <link rel="stylesheet" href="./css/peluqueria.css">
+        <link rel="stylesheet" href="./css/blog.css">
         <link rel="stylesheet" href="./css/devoluciones.css">
         <link rel="stylesheet" href="./css/envio.css">
         <link rel="stylesheet" href="./css/privacidad.css">
@@ -20,6 +20,9 @@
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Protest+Riot&display=swap" rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/42b607724c.js" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     </head>
     <body>
      <!-- top header -->
@@ -30,9 +33,9 @@
             </section>
             <section class="icons-constainer">
                 <ul class="icons-header">
-                    <li><a href=""></a><i id="icons-top" class="fa-solid fa-user"></i></li>
-                    <li><a href=""></a><i id="icons-top" class="fa-solid fa-map-location-dot"></i></li>
-                    <li><a href=""></a><i id="icons-top" class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><i id="icons-top" class="fa-solid fa-user"></i></li>
+                    <li><i id="icons-top" class="fa-solid fa-map-location-dot"></i></li>
+                    <li><i id="icons-top" class="fa-solid fa-cart-shopping"></i></li>
                 </ul>
             </section>
         </section>
@@ -48,7 +51,7 @@
                 <li><p class="nav-list-color btn-dog">Perro</p></li>
                 <li><p class="nav-list-color btn-cat">Gato</p></li> 
                 <li><p class="nav-list-color btn-peluqueria">Peluqueria</p></li>
-                <li><p class="nav-list-color">Blog</p></li>
+                <li><p class="nav-list-color btn-blog">Blog</p></li>
             </ul>
         </nav>
     </header>
@@ -134,7 +137,8 @@
     <section class="peluqueria-section">
             <h3>¡AGENDA LA CITA DE BAÑO Y PELUQUERÍA!</h3>
             <p>REGIÓN VALPARAISO</p>
-        <section class="peluqueria-tarjeta">
+    <section class="fondo-tarjeta-cita">
+        <aside class="peluqueria-tarjeta">
             <section class="direccion-cita">
                <p>Oh My Dog!</p>
                <p>Gomez Carreño</p>
@@ -146,7 +150,8 @@
                <div class="ducha-caninos"><img src="./img/dog-cat-ducha.png" alt="perro y gato bañandose" ></div>
             </section>
             <button class="btn-agendar-cita">Agendar cita</button>
-        </section>
+        </aside>
+    </section>
     </section>
     <section class="oferta-peluqueria">
     <span class="span-peluqueria">20% de descuento en tu primer servicio 🫧🪮✂️ </span>
@@ -177,7 +182,81 @@
         <img src="./img/peluqueria-7.png" alt="peluqueria-canina" class="img-requerimientos">
     </section>
     </main>
+
+    <!-- buscador de productos -->
+
+    <main class="productos-navegacion"></main>
+    
      <!-- estilos politica de privacidad  -->
+
+     <!-- blog-pages tips recomendaciones  -->
+    
+    <main class="blog-pages">
+        <article class="titulo-blog"><h1>Recuerdos de algun lugar 🐾</h1></article>
+        <aside class="img-blog">
+            <img class="img-blog-1" src="./img/tips-blog-1.jpg" alt="">
+            <img class="img-blog-2" src="./img/tips-blog-2.jpg" alt="">
+            <img class="img-blog-3" src="./img/tips-blog-3.jpg" alt="">
+            <img class="img-blog-4" src="./img/tips-blog-4.jpg" alt="">
+            <img class="img-blog-5" src="./img/tips-blog-5.jpg" alt="">
+            <img class="img-blog-6" src="./img/tips-blog-6.jpg" alt="">
+            <img class="img-blog-7" src="./img/tips-blog-7.jpg" alt="">
+            <img class="img-blog-8" src="./img/tips-blog-8.jpg" alt="">
+            <img class="img-blog-9" src="./img/tips-blog-9.jpg" alt="">
+            <img class="img-blog-10" src="./img/tips-blog-10.jpg" alt="">
+            <img class="img-blog-11" src="./img/tips-blog-11.jpg" alt="">
+            <img class="img-blog-12" src="./img/tips-blog-12.jpg" alt="">
+        </aside>
+        <article class="tips-cuidados-blog">
+            <h3>¿Los perros pueden comer lentejas?</h3>
+            <p>Las lentejas son una fuente de vitamina B, fósforo, zinc, hierro, fibra y proteína, con un bajo contenido de almidón.
+            Suministradas con moderación, las lentejas pueden formar parte de la dieta de tu perro. 
+            Suministrar demasiadas lentejas o utilizar las lentejas como un relleno en la dieta diaria puede resultar contraproducente.
+            </p>
+
+            <h3>¿Pueden presentar los perros alergia a las lentejas?</h3>
+            <p>Es común que los perros sufran alergias a proteínas como la carne de res, el trigo, pollo o soja y aunque no es frecuente. 
+            Si incluyes las lentejas en la dieta de tu mascota y notas que tu perro comienza a presentar picazón, o malestar estomacal, es posible que sea alérgico a las lentejas.  
+            Lo ideal es que antes de tomar la decisión de darle lentejas a tu perro consultes con tu veterinario, quien es el indicado para recomendar lo mejor para su dieta.
+            </p>
+            
+            <h3>¿Qué comen los perros?</h3>
+            <p>En la actualidad, los perros en nuestros hogares, se alimentan en su mayoría de comida procesada, especialmente fabricada y balanceada para cubrir sus necesidades. 
+            Estos alimentos procesados vienen en forma de comida seca o en forma húmeda y aportan la cantidad necesaria de vitaminas y minerales para mantener a nuestro perro sano.
+            </p>
+            
+            <h3>¿Los perros pueden comer plátano?</h3>
+            <p>Existen algunos perros que adoran el plátano y a otros no les da más. 
+            Si tu perro es de esos que le gustan los plátanos, puedes estar tranquilo, ya que el plátano no es dañino para los perros en las dosis adecuadas. 
+            </p>
+            
+            <h3>¿Los perros pueden comer cáscara de plátano?</h3>
+            <p>Aunque la cáscara del plátano no es tóxica para el perro, no es recomendable dársela por su alto nivel de fibra, difícil de digerir. 
+            La cáscara de plátano puede producir bloqueos intestinales, malestar estomacal e incluso vómitos o diarrea. 
+            </p>
+            
+            <h3>¿Qué frutas no pueden comer los perros?</h3>
+            <p>Aunque muchas frutas son seguras para tu mascota, hay algunas que deben evitarse. 
+            Por estas razones, es mejor evitar dar a tu perro cualquiera de las siguientes frutas: uvas, pasas, cerezas y aguacate. 
+            </p>
+            
+            <h3>¿Qué debo hacer con las picaduras de abejas en perros?</h3>
+            <p>Lo primero que debes hacer es asegurarte de cuantas abejas lo picaron. 
+            Si solo fue una abeja quizás solo tenga molestias por un lapso de tiempo, pero si fue más de una, debes correr al veterinario. 
+            Busca el aguijón ya que los aguijones siguen secretando veneno y al eliminarlos se elimina la secreción. 
+            La forma más fácil de quitar el aguijón es pasando una tarjeta plástica por el área hinchada.
+            </p>
+            
+            <h3>5 ideas para jugar con tu gato</h3>
+            <p> 1- Los rompecabezas interactivos son perfectos para que tu gato se entretenga. Además los estimula mentalmente, lo que garantiza que tu gato se mantenga con buena actividad mental cuando envejezca. <br>
+                2- Varita con plumas es uno de los tipos más famosos de juegos para gatos es perfecto para las mascotas que tienen mucha energía. Mueve la varita sobre su cabeza y tiéntalo a agarrar la pluma u objeto flotante. <br>
+                3- Lanzar y traer por lo general no pensamos que los gatos disfrutan de jugar a la pelota, sin embargo al igual que los perros, disfrutan mucho el proceso de buscar el objeto que le lances y traerlo de regreso. <br>
+                4- Las escondidas, al igual que la mayoría de los juegos para gatos, canalizan los instintos naturales de tu mascota. <br>
+                5- Acuesta la bolsa en el piso y luego rasca la superficie o da pequeños golpecitos. Tu gato reaccionará a los estímulos y tratará de conseguir de donde viene el ruido.
+            </p>
+        </article>
+        <aside class="aside-video"></aside>
+    </main>
 
     <main class="privacidad-container">
         <section class="privacidad-menu">
@@ -494,7 +573,7 @@
      <p class="copyright"><i class="fa-regular fa-copyright"></i>Oh My Dog! - Todos los derechos reservados</p>
     
     <script src="./js/call.js" async defer></script>
-    <script src="./js/funciones-dog.js" async defer></script>
+    <script src="./js/funciones.js" async defer></script>
     <script src="./js/navegacion.js" async defer></script>
     
  </body>

@@ -35,6 +35,76 @@
   
 }
 
+/* estilos productos cat */
+
+.card-container-cat {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 25px 15px;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,140px);
+  place-content: center;
+  
+}
+
+/* estilos productos de navegacion */
+
+.productos-navegacion {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 25px 15px;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,140px);
+  place-content: center;
+  background-image: url(../img/fondo-main.jpg);
+  
+}
+
+/* respuesta si no hay stock  */
+
+.container-stock {
+  width: 230%;
+  
+}
+.titulo-stockFail {
+  color: var(--color-letter);
+  font-weight: 700;
+  
+}
+.sub-stockFail {
+  color: #b42707;
+  font-weight: 600;
+  line-height: 2;
+  filter: drop-shadow(10px 10px 10px rgb(10, 10, 10));
+ }
+.parrafo-stockFail {
+  color: var(--color-letter);
+  font-weight: bold;
+  padding: 10px 0px 15px 0px;
+}
+.enumeracion-1-fail {
+  color: var(--color-letter);
+  font-weight: bold;
+}
+.enumeracion-2-fail {
+  color: var(--color-letter);
+  font-weight: bold;
+}
+.enumeracion-3-fail {
+  color: var(--color-letter);
+  font-weight: bold;
+}
+.post-data-stock-fail {
+  color: var(--color-letter);
+  font-weight: bold;
+}
+
+/* estilos generales de todos los productos */
+
 .inactive {
     display:none;
 }
@@ -124,4 +194,47 @@
       opacity: 1;
     }
   }
+
+  @media(max-width: 335px) {
+    .container-stock {
+      width: 185vw;
+    }
+  }
   
+  /* responsive de fail-stock-search */
+
+  @media(min-width: 539px) {
+    .container-stock {
+      width: 95vw;
+    }
+  }
+  @media(min-width: 767px) {
+    .container-stock {
+      width: 90vw;
+    }
+  }
+  @media(min-width: 819px) {
+    .container-stock {
+      width: 85vw;
+    }
+  }
+  @media(min-width: 850px) {
+    .container-stock {
+      width: 100vw;
+    }
+  }
+  @media(min-width: 910px) {
+    .container-stock {
+      width: 95vw;
+    }
+  }
+  @media(min-width: 1022px) {
+    .container-stock {
+      width: 100vw;
+    }
+  }
+  @media(min-width: 1075px) {
+    .container-stock {
+      width: 90vw;
+    }
+  }

@@ -41,7 +41,6 @@
 .section-logo img {
     width: 160%;
     position: relative;
-    
     left: 20px;
     bottom: 10px;
 }
@@ -56,12 +55,16 @@
 }
 
 .icons-header li {
+    width: 40%;
+    height: 25%;
     list-style: none;
     display: flex;
     margin: 18px 0 0 30px;
 }
 
 #icons-top {
+    width: 40%;
+    height: 25%;
     color: var(--color-letter);
     display: flex;
     font-size: 17px;
@@ -90,8 +93,8 @@
 }
 
 .button-navigation {
-  position: relative;
-  right: 55px;
+    position: relative;
+    right: 55px;
     background: none;
     border: none;
     font-size: var(--size-medium);
@@ -197,8 +200,8 @@
     width: 100%;
     position: relative;
     left: 10px;
-    border-radius: 90px;
-    box-shadow: 5px 5px 5px 5px rgb(129, 113, 111)
+    filter: drop-shadow(20px 20px 20px rgb(19, 18, 18));
+
 }
 
 #img-main-1 {
@@ -206,8 +209,7 @@
     position: relative;
     top: 20px;
     right: 30px;
-    border-radius: 90px;
-    box-shadow: 5px 5px 5px 5px rgb(129, 113, 111)
+    filter: drop-shadow(20px 20px 20px rgb(19, 18, 18));
 }
 
 #img-main-3 {
@@ -215,8 +217,7 @@
     position: relative;
     right: 30px;
     bottom: 20px;
-    border-radius: 90px;
-    box-shadow: 5px 5px 5px 5px rgb(129, 113, 111)
+    filter: drop-shadow(20px 20px 20px rgb(19, 18, 18));
 }
 
 #img-main-5 {
@@ -224,8 +225,7 @@
     position: relative;
     top: 10px;
     right: 30px;
-    border-radius: 90px;
-    box-shadow: 5px 5px 5px 5px rgb(129, 113, 111)
+    filter: drop-shadow(20px 20px 20px rgb(19, 18, 18));
 }
 
 .header {
@@ -300,20 +300,20 @@
 /* estilos footer */
 
 .footer-container {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    background-image: linear-gradient(to left bottom, #dedbdb, #e3e0e0, #e9e6e6, #eeebeb, #f4f1f1, #f6f3f3, #f7f6f6, #f9f8f8, #f8f7f7, #f6f6f5, #f5f4f4, #f4f3f3);
-    display: flex;
-    justify-content: space-between;
-    font-size: var(--size-small-xs);
+width: 100%;
+height: auto;
+padding: 10px;
+background-image: linear-gradient(to left bottom, #dedbdb, #e3e0e0, #e9e6e6, #eeebeb, #f4f1f1, #f6f3f3, #f7f6f6, #f9f8f8, #f8f7f7, #f6f6f5, #f5f4f4, #f4f3f3);
+display: flex;
+justify-content: space-between;
+font-size: var(--size-small-xs);
 }
 
 .footer-block {
-    width: 100%;
-    height: auto;
-    display: flex;
-    margin: 0 0 0 5px;
+width: 100%;
+height: auto;
+display: flex;
+margin: 0 0 0 5px;
 }
 
 .footer-logo {
@@ -321,197 +321,194 @@ height: 40px;
 }
 
 .footer-logo p:nth-child(1) {
-    font-weight: 700;
-    margin-bottom: 10px;
+font-weight: 700;
+margin-bottom: 10px;
 }
 
 .footer-social {
-    display: flex;
-    margin: 15px;
-    position: relative;
+display: flex;
+margin: 15px;
+position: relative;
 }
 
 .footer-social li {
-    display: flex;
-    list-style: none;
-    position: relative;
-    top: 60px;
-    right: 67px;
-    letter-spacing: 3px;
+display: flex;
+list-style: none;
+position: relative;
+top: 60px;
+right: 67px;
+letter-spacing: 3px;
 }
 
 #footer-icons {
-    color: var(--color-black);
+color: var(--color-black);
+font-size: 15px;
 }
 
 .footer-block-2 {
-   
-    display: flex;
-   position: relative;
-   right: 65px;
+display: flex;
+position: relative;
+right: 75px;
 }
 
 .footer-contac span {
-   position: relative;
-   bottom: 15px;
-   left: 15px;
+position: relative;
+bottom: 15px;
+left: 15px;
 }
 
 .footer-contac li {
-    list-style: none;
+list-style: none;
 }
 
 .footer-contac li a {
-    text-decoration: none;
-    color: var(--color-black);
+text-decoration: none;
+color: var(--color-black);
 }
 
 #fotter-inf-contac {
-    color: var(--color-black);
+color: var(--color-black);
+font-size: 15px;
 }
 
 .footer-contac li:nth-child(1) {
-    font-weight: 700;
-    margin-bottom: 5px;
+font-weight: 700;
+margin-bottom: 5px;
 }
 
 .footer-contac li:nth-child(2) {
-    margin-top: 12px;
+margin-top: 12px;
 }
 
 .footer-block-3 {
-    display: flex;
-    position: relative;
-    right: 40px;
+position: relative;
+right: 60px;
 }
 
 .footer-politica {
-    list-style: none;
+list-style: none;
 }
 
 .footer-politica a {
-    text-decoration: none;
-    color: #000000;
+text-decoration: none;
+color: #000000;
 }
 
 .footer-politica li:nth-child(1) {
-    font-weight: 700;
-    margin-bottom: 10px;
+font-weight: 700;
+margin-bottom: 10px;
 }
 .copyright {
-    height: auto;
-    text-align: center;
-    color: var(--color-letter);
-    font-size: var(--size-small);
-    font-weight: 700;
+height: auto;
+text-align: center;
+color: var(--color-letter);
+font-size: var(--size-small);
+font-weight: 700;
 }
 .copyright i {
-    font-size: 8px;
-    color: var(--color-black);
-    position: relative;
-    bottom: 5px;
+font-size: 8px;
+color: var(--color-black);
+position: relative;
+bottom: 5px;
 }
 
-@media(min-width: 414px) {
+@media(min-width: 343px) {
     .section-logo img{
-       width: 150%;
+    width: 180%;
+    }
+}
+@media(min-width: 373px) {
+    .section-logo img{
+    width: 160%;
+    }
+}
+@media(min-width: 389px) {
+    .section-logo img{
+    width: 160%;
+    }
+}
+@media(min-width: 411px) {
+    .section-logo img{
+    width: 150%;
     }
 }
 
 @media(min-width: 540px) {
     .section-logo img{
-        width: 110%;
-        position: relative;
+    width: 110%;
+    }
+}@media(min-width: 767px) {
+    .section-logo img{
+    width: 80%;
     }
 }
-@media(min-width: 768px) {
+@media(min-width: 819px) {
     .section-logo img{
-        width: 90%;
-        position: relative;
-        bottom: 25px;
+    width: 75%;
+    }
+}
+@media(min-width: 852px) {
+    .section-logo img{
+    width: 70%;
     }
 }
 @media(min-width: 912px) {
     .section-logo img{
-        width: 75%;
-        position: relative;
-        bottom: 25px;
-    }
+    width: 65%;
+   }
 }
-@media(min-width: 1024px) {
+@media(min-width: 1023px) {
     .section-logo img{
-        width: 75%;
-        position: relative;
-        bottom: 35px;
+    width: 60%;
     }
 }
 
-@media(min-width: 1280px) {
-    .section-logo img{
-        width: 55%;
-        position: relative;
-        
-    }
-}
 @media(min-width: 1100px) {
     .section-logo img{
-        width: 55%;
-        position: relative;
-        bottom: 15px;
-
+    width: 55%;
+    position: relative;
+    bottom: 15px;
     }
 }
-@media(min-width: 410px) {
+@media(min-width: 1280px) {
+    .section-logo img{
+    width: 50%;
+    }
+}
+
+@media(min-width: 539px) {
     .icons-header li {
-        margin: 30px 40px 0px 25px;
+        padding: 10px 30px 0px 20px;
     }
 }
-
+@media(min-width: 767px) {
+    .icons-header li {
+        padding: 10px 40px 0px 60px;
+    }
+}
 @media(min-width: 910px) {
     .icons-header li {
-        margin: 30px 40px 0px 65px;
-    }
-}
-@media(min-width: 540px) {
-    .icons-header li {
-        margin: 30px 40px 0px 50px;
+        padding: 10px 40px 0px 65px;
     }
 }
 @media(min-width: 1024px) {
     .icons-header li {
-        margin: 30px 40px 0px 70px;
+        padding: 10px 40px 0px 90px;
     }
 }
 @media(min-width: 1100px) {
     .icons-header li {
-        margin: 30px 40px 0px 100px;
-    }
-}
-@media(min-width: 1280px) {
-    .icons-header li {
-        margin: 30px 0px 0px 125px;
-    }
-}
-@media(min-width: 414px) {
-    .footer-social li {
-        margin: 0px 9px 5px 0px;
-        font-size: 15px;
-    }
-}
-@media(min-width: 390px) {
-    .footer-social li {
-        margin: 0px 10px 5px 0px;
-        font-size: 15px;
-    }
-}
-@media(min-width: 768px) {
-    .footer-social li {
-        margin: 0px 20px 5px -10px;
-        font-size: 20px;
+        padding: 10px 40px 0px 100px;
     }
 }
 
-@media(min-width: 853px) {
+@media(min-width: 1280px) {
+    .icons-header li {
+    padding: 10px 0px 0px 125px;
+    }
+}
+
+@media(min-width: 768px) {
     .information-main .main-1,.main-2,.main-3,.main-4,.main-5,.main-6 {
         width: 40%;
     }
@@ -537,7 +534,7 @@ height: 40px;
         top: 5px;
     }
 }
-@media(min-width: 768px) {
+@media(min-width: 853px) {
     .information-main .main-1,.main-2,.main-3,.main-4,.main-5,.main-6 {
         width: 40%;
     }
@@ -587,7 +584,61 @@ height: 40px;
         position: relative;
         top: -5px;
     }
-   
+}
+
+@media(min-width: 343px) {
+    .footer-block-3 {
+        padding-left: 16px;
+    }
+}
+@media(min-width: 360px) {
+    .footer-block-2, .footer-block-3 {
+        padding-left: 16px;
+    }
+}
+@media(min-width: 374px) {
+    .footer-block-2, .footer-block-3 {
+        padding-left: 25px;
+    }
+}
+@media(min-width: 390px) {
+    .footer-block-2 {
+        padding-left: 0px;
+    }
+}
+@media(min-width: 429px) {
+    .footer-block-2 {
+        padding-left: 35px;
+    }
+}
+@media(min-width: 767px) {
+    .footer-block-2 {
+        padding-left: 95px;
+    }
+}
+@media(min-width: 767px) {
+    .footer-block-3 {
+        margin-right: -30px;
+    }
+}
+
+@media(min-width: 390px) {
+    .footer-social li {
+        margin: 0px 10px 5px 0px;
+        font-size: 15px;
+    }
+}
+@media(min-width: 414px) {
+    .footer-social li {
+        margin: 0px 9px 5px 0px;
+        font-size: 15px;
+    }
+}
+@media(min-width: 768px) {
+    .footer-social li {
+        margin: 0px 20px 5px -10px;
+        font-size: 20px;
+    }
 }
 @media(min-width: 1100px) {
     .information-main .main-6 {

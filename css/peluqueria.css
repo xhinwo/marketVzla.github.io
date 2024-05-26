@@ -41,16 +41,31 @@
     color: var(--color-letter);
 }
 
+.fondo-tarjeta-cita {
+    display: flex;
+    background-image: url(../img/body-fondo-2.jpg);
+    place-content: center;
+    
+    
+    border-radius: 20px;
+        
+    
+    
+}
+
 .peluqueria-tarjeta {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content:space-around;
-    margin: 25px auto;
-    padding: 10px;
+    
     border-radius: 20px;
     box-shadow: 10px 10px 5px 0px rgb(159, 151, 151);
-    background-image: linear-gradient(to left bottom, #dedbdb, #e3e0e0, #e9e6e6, #eeebeb, #f4f1f1, #f6f3f3, #f7f6f6, #f9f8f8, #f8f7f7, #f6f6f5, #f5f4f4, #f4f3f3);
+    background-image: radial-gradient(circle, #fffcfc, #f5f3f3, #eceaea, #e2e1e1, #d9d8d8, #d9d8d8, #d9d7d7, #d9d7d7, #e2dfdf, #eae8e8, #f3f0f0, #fcf9f9);
     place-items: center;
+    opacity: 85%;
+    
+    
+    
 }
 
 .direccion-cita p:nth-child(1) {
@@ -59,6 +74,7 @@
 
 .direccion-cita p {
     font-size: var(--size-small);
+    filter: drop-shadow(3px 3px 3px rgb(104, 101, 101));
 }
 
 .agendar {
@@ -67,18 +83,17 @@
 
 .ducha-caninos img {
     width: 100%;
-    filter: drop-shadow(5px 5px grey);
+    filter: drop-shadow(10px 10px 10px grey);
 }
 
 .btn-agendar-cita {
     height: 35px;
     width: 90px;
-    position: relative;
     border-style: none;
-    background: none;
     border-radius: 40px;
     margin: 6px 14px;
-    box-shadow: 2px 2px 2px 2px rgb(143, 135, 39);
+    box-shadow: 4px 4px 4px rgb(124, 122, 101);
+    background-color: #b8b8b9;
     color:#8d2610 ;
     font-weight: 700;
     cursor: pointer;
@@ -137,12 +152,34 @@
 
 .img-requerimientos {
     width: 100%;
-    filter: drop-shadow(15px 15px 15px grey);
+    filter: drop-shadow(20px 20px 20px rgb(21, 21, 21));
 }
 
-@media(max-width: 412px) {
-    .peluqueria-tarjeta {
-        width: 90%;
+@media(min-width: 765px) {
+    .btn-agendar-cita {
+        width: 110px;
+        height: 50px;
+    }
+}
+
+@media(min-width: 819px) {
+    .btn-agendar-cita {
+        width: 130px;
+        height: 60px;
+    }
+}
+
+@media(min-width: 1023px) {
+    .btn-agendar-cita {
+        width: 150px;
+        height: 65px;
+    }
+}
+
+@media(min-width: 1270px) {
+    .btn-agendar-cita {
+        width: 160px;
+        height: 75px;
     }
 }
 

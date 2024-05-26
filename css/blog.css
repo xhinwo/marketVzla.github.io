@@ -1,0 +1,157 @@
+/* general styles */
+
+:root {
+    --bg-fotter:#C7B198;
+    --bg-nav:#DFD3C3;
+    --bg-body:#F0ECE3;
+    --color-letter: #113946;
+    --color-black:#000000;
+    --color-white:#FFFFFF;
+    --size-big: 18px;
+    --size-medium: 16px;
+    --size-small: 14px;
+    --size-small-xs: 12px;
+}
+
+* { box-sizing: border-box;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos de la pagina de blog */
+
+.blog-pages {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/fondo-main.jpg);
+}
+
+.titulo-blog h1 {
+    text-align: center;
+    color: var(--color-letter);
+    padding-top: 20px;
+}
+
+.img-blog {
+    margin: 0px 60px 0px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 50px 30px 40px;
+    filter: drop-shadow(15px 15px 15px grey);
+}
+
+.img-blog-1 {
+    width: 24%;
+    border-radius: 20px;
+}
+
+.img-blog-2 {
+    width: 26%;
+    border-radius: 20px;
+}
+.img-blog-3 {
+    width: 26%;
+    border-radius: 20px;
+}
+.img-blog-4 {
+    width: 24%;
+    border-radius: 20px;
+}
+.img-blog-5 {
+    width: 26%;
+    border-radius: 20px;
+}
+.img-blog-6 {
+    width: 24%;
+    border-radius: 20px;
+}
+.img-blog-7 {
+    width: 24%;
+    border-radius: 20px;
+}
+  
+.img-blog-8 {
+    width: 26%;
+    border-radius: 20px;
+}
+.img-blog-9 {
+    width: 24%;
+    border-radius: 20px;
+}
+.img-blog-10 {
+    width: 26%;
+    border-radius: 20px;
+}
+.img-blog-11 {
+    width: 26%;
+    border-radius: 20px;
+}
+.img-blog-12 {
+    width: 24%;
+    border-radius: 20px;
+}
+
+.tips-cuidados-blog {
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+}
+
+.tips-cuidados-blog h3 {
+    padding-bottom: 10px;
+    color: var(--color-letter);
+    
+}
+
+.tips-cuidados-blog p {
+    padding-bottom: 10px;
+}
+
+.aside-video {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type:proximity;
+    padding: 40px;
+    gap: 30px;
+}
+
+.blog-container {
+    display: inline-block;
+    scroll-snap-align: center;
+}
+
+.iframe-container iframe {
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+
+.h3-blog {
+    font-size: var(--size-small-xs);
+    color: var(--color-letter);
+}
+
+@media(min-width:1000px) {
+    .aside-video {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px;
+        gap: 30px;
+        place-content: center;
+    }
+    
+    .blog-container {
+        width: calc(31%);
+        
+    }
+
+    .iframe-container iframe {
+        width: calc(100%);
+        border-radius: 15px;
+        box-shadow: 10px 10px 10px grey;
+            
+    }
+
+}
