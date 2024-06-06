@@ -1,38 +1,14 @@
-/* general styles */
-
-:root {
-    --bg-fotter:#C7B198;
-    --bg-nav:#DFD3C3;
-    --bg-body:#F0ECE3;
-    --color-letter: #113946;
-    --color-black:#000000;
-    --color-white:#FFFFFF;
-    --size-big: 18px;
-    --size-medium: 16px;
-    --size-small: 14px;
-    --size-small-xs: 12px;
-}
-
-* { box-sizing: border-box;
-    font-family: "PT Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-}
-
 /* estilos del menu de devoluciones */
 
 .devoluciones-container {
     width: 100%;
     height: auto;
-    background-image: url(../img/fondo-main.jpg);
+    background-image: url(../img/fondo-main.webp);
 }
 
 .devoluciones-menu {
     padding: 40px;
     text-align: center;
-    
 }
 
 .devoluciones-h3 {

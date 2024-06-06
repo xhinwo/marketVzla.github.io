@@ -1,32 +1,9 @@
-/* general styles */
-
-:root {
-    --bg-fotter:#C7B198;
-    --bg-nav:#DFD3C3;
-    --bg-body:#F0ECE3;
-    --color-letter: #113946;
-    --color-black:#000000;
-    --color-white:#FFFFFF;
-    --size-big: 18px;
-    --size-medium: 16px;
-    --size-small: 14px;
-    --size-small-xs: 12px;
-}
-
-* { box-sizing: border-box;
-    font-family: "PT Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-}
-
 /* estilos de la pagina de blog */
 
 .blog-pages {
     width: 100%;
     height: auto;
-    background-image: url(../img/fondo-main.jpg);
+    background-image: url(../img/fondo-main.webp);
 }
 
 .titulo-blog h1 {
@@ -102,7 +79,6 @@
 .tips-cuidados-blog h3 {
     padding-bottom: 10px;
     color: var(--color-letter);
-    
 }
 
 .tips-cuidados-blog p {
@@ -133,7 +109,9 @@
     color: var(--color-letter);
 }
 
-@media(min-width:1000px) {
+ /* mediaquery de blog  */
+
+ @media(min-width:1000px) {
     .aside-video {
         display: flex;
         flex-wrap: wrap;
@@ -151,7 +129,5 @@
         width: calc(100%);
         border-radius: 15px;
         box-shadow: 10px 10px 10px grey;
-            
     }
-
 }

@@ -1,6 +1,17 @@
+const mainPages = document.querySelector('.main-container')
+const containerDog = document.querySelector('.card-container-dog')
+const containerCat = document.querySelector('.card-container-cat')
+const containerPeluqueria = document.querySelector('.peluqueria-container')
+const blogPages = document.querySelector('.blog-pages')
+const containerPrivacidad = document.querySelector('.privacidad-container')
+const containerServicio = document.querySelector('.termino-servicio-container')
+const containerPolitica = document.querySelector('.politica-container')
+const containerDevoluciones = document.querySelector('.devoluciones-container')
+
+const valueNavegacion = imputNavegacion.value.toLowerCase();
+
 window.addEventListener('DOMContentLoaded',navigator,false)
 window.addEventListener('hashchange',navigator,false)
-const blogPages = document.querySelector('.blog-pages')
 
 containerDog.classList.add('inactive')
 containerCat.classList.add('inactive')
@@ -11,8 +22,6 @@ containerServicio.classList.add('inactive')
 containerPolitica.classList.add('inactive')
 containerDevoluciones.classList.add('inactive')
 productosNavegacion.classList.add('inactive')
-
-const valueNavegacion = imputNavegacion.value.toLowerCase();
 
 btnInicio.addEventListener('click', function () {
   inicioHash()
@@ -54,7 +63,6 @@ btnDevoluciones.addEventListener('click', function () {
   devolucionesHash()
   navigator()
 });
-
 
 function inicioHash () {
   window.location.hash = '#home' 
@@ -113,7 +121,7 @@ function navigator () {
 } else if (window.location.hash.startsWith('#devoluciones')) {
     devolucionesPages()
 } else {
-   return window.location.hash = inicioPages()
+   return window.location.hash = ''
 }
 }
 function inicioPages () {

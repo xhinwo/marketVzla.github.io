@@ -7,8 +7,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "xhinwo",
-  "license": "MIT",
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
-  }
+  "license": "MIT"
 }
